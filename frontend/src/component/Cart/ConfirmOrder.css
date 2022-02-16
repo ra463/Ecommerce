@@ -1,0 +1,187 @@
+.confirmOrderPage {
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+}
+.confirmOrderPage > div:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.confirmshippingArea {
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.confirmshippingArea > h3 {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.confirmshippingAreaBox,
+.confirmCartItemsContainer {
+  margin: 2vmax;
+}
+
+.confirmshippingAreaBox > div {
+  display: flex;
+  margin: 1vmax 0;
+}
+
+.confirmshippingAreaBox > div > p {
+  font-weight: bold;
+  color: black;
+}
+.confirmshippingAreaBox > div > span {
+  margin: 0 1vmax;
+  font-weight: bold;
+  color: #575757;
+}
+
+.confirmCartItems > h3 {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.confirmCartItems {
+  padding: 5vmax;
+  padding-top: 2vmax;
+}
+
+.confirmCartItemsContainer {
+  max-height: 20vmax;
+  overflow-y: auto;
+}
+
+.confirmCartItemsContainer > div {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2vmax 0;
+}
+
+.confirmCartItemsContainer > div > img {
+  width: 6vmax;
+  height: 8vmax;
+}
+
+.confirmCartItemsContainer > div > a {
+  color: black;
+  margin: 0 2vmax;
+  width: 35%;
+  text-decoration: none;
+  margin-left: -8vmax;
+}
+.confirmCartItemsContainer > div > a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+.orderSummary {
+  padding: 5vmax 7vmax;
+}
+
+.orderSummary > p {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.orderSummary > div > div {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 2vmax 0;
+}
+.orderSummary > div > div > span {
+  color: rgba(0, 0, 0, 0.692);
+}
+.orderSummaryTotal {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.363);
+  padding: 2vmax 0;
+}
+
+.orderSummary > button {
+  border: none;
+  background-color: #ff0157;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.219);
+}
+
+.orderSummary > button:hover {
+  background-color: orange;
+}
+.orderSummary > button:active {
+  transform: scale(0.88);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (max-width: 600px) {
+  .confirmOrderPage {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+
+  .confirmOrderPage > div:last-child {
+    border-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+  }
+  .confirmshippingAreaBox > div {
+    display: flex;
+    margin: 6vw 0;
+  }
+  .confirmCartItemsContainer {
+    max-height: 50vw;
+  }
+
+  .confirmCartItemsContainer > div {
+    margin: 4vw 0;
+  }
+
+  .confirmCartItemsContainer > div > img {
+    width: 10vw;
+  }
+
+  .confirmCartItemsContainer > div > a {
+    margin: 0;
+    width: 30%;
+  }
+
+  .orderSummary {
+    padding: 12vw;
+  }
+
+  .orderSummary > p {
+    padding: 2vw;
+    font-weight: bold;
+    font-size: 2.5vmax;
+  }
+  .orderSummaryTotal {
+    padding: 5vw 0;
+  }
+
+  .orderSummary > button {
+    padding: 4vw;
+    margin: 4vw auto;
+  }
+}

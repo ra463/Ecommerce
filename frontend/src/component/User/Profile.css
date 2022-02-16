@@ -1,0 +1,195 @@
+.head {
+  text-transform: uppercase;
+  padding-left: 2vmax;
+  padding-top: 1vmax;
+  padding-bottom: 1vmax;
+  padding-right: 2vmax;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  background-color: white;
+}
+.head > h2 {
+  width: 14%;
+  text-align: center;
+  background: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+.head > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 12%;
+  justify-content: center;
+  background: #ff0157;
+  border-radius: 30px;
+  right: 9.5vmax;
+  transition: 0.5s all;
+  position: fixed;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+}
+.head > a:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.head > a:active {
+  transform: scale(0.8);
+}
+.profile-Container {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+}
+.profile-Container > div {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-Container > div:first-child {
+  border-right: 1px solid black;
+}
+.profile-Container > div:first-child > img {
+  width: 18vmax;
+  height: 17vmax;
+  border-radius: 100%;
+  transition: 0.5s all;
+}
+.profile-Container > div:first-child > img:hover {
+  transform: scale(1.1);
+}
+.profile-Container >div:first-child > a > svg {
+  padding: 1vmax;
+  color: rgb(63, 59, 59);
+  font-size: 54px;
+  background-color: rgb(236, 234, 234);
+  border-radius: 100%;
+  position: absolute;
+  top: 380px;
+  left: 310px;
+  border: 3px solid white;
+}
+.profile-Container >div:first-child > a > svg:hover{
+  background-color: gainsboro;
+}
+.profile-Container > div:first-child > h1 {
+  padding: 1vmax;
+}
+.profile-Container > div:first-child > p {
+  border: 1px solid gray;
+  padding: 3px 8px;
+  border-radius: 30px;
+}
+.profile-Container > div:last-child {
+  align-items: flex-start;
+  padding: 4vmax;
+}
+.profile-Container > div:last-child > div {
+  margin-top: 2vmax;
+  font-size: 20px;
+}
+.profile-Container > div:last-child > div > p {
+  font-weight: bold;
+}
+.profile-Container > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 1vmax;
+}
+.profile-Container > div:last-child > div:last-child > a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 2vmax;
+  background: rgb(17, 17, 17);
+  padding: 5px;
+  border-radius: 30px;
+  transition: 0.5s all;
+}
+.profile-Container > div:last-child > div:last-child > a:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: black;
+  font-weight: bold;
+}
+.profile-Container > div:last-child > div:last-child > a:active {
+  transform: scale(0.8);
+}
+
+@media (max-width: 1150px) {
+  .head > h2 {
+    width: 20%;
+  }
+  .head > a {
+    width: 18%;
+  }
+}
+@media (max-width: 750px) {
+  .head > h2 {
+    width: 30%;
+  }
+  .head > a {
+    width: 28%;
+    top: 15vmax;
+    right: 3vmax;
+  }
+  .profile-Container {
+    margin-top: 3vmax;
+    flex-direction: column;
+  }
+  .profile-Container > div:last-child {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .head > h2 {
+    width: 37%;
+    font-size: 15px;
+    padding: 3px;
+  }
+  .head > a {
+    width: 38%;
+    top: 16vmax;
+    right: 3vmax;
+    font-size: 15px;
+  }
+  .profile-Container {
+    margin-top: 0vmax;
+  }
+  .profile-Container > div:first-child {
+    border-bottom: 1px solid gray;
+    height: 50vh;
+    width: 80%;
+    margin: auto;
+    border-right: none;
+  }
+  .profile-Container > div:first-child > a > svg{
+    transform: translateY(-44px) translateX(-66px); 
+  }
+  .profile-Container > div:last-child {
+    margin-top: -6vmax;
+  }
+}
+@media (max-width: 389px){
+  .profile-Container > div:first-child > a > svg{
+    transform: translateY(-114px) translateX(-113px); 
+    font-size: 3em;
+  }
+} 

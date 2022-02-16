@@ -1,0 +1,111 @@
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 2vmax;
+}
+
+.productListContainer > p {
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  margin: 2vmax 0;
+  font-size: 2vmax;
+  background: white;
+  border-radius: 10px;
+  padding: 0.7vmax;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#productListHeading {
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  margin: 2vmax 0;
+  font-size: 2vmax;
+  background: white;
+  border-radius: 10px;
+  padding: 0.7vmax;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#productListHeading > svg {
+  font-size: 2.2vmax;
+  margin-right: 8px;
+  color: gray;
+}
+.productListContainer > p > svg {
+  font-size: 2.2vmax;
+  margin-right: 8px;
+  color: gray;
+}
+.productListTable {
+  background-color: white;
+  border: none !important;
+}
+.productListTable div {
+  border: none !important;
+  font-weight: bold;
+}
+.MuiDataGrid-root .MuiDataGrid-columnHeader {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #ff0157;
+}
+.MuiDataGrid-root.MuiDataGrid-autoHeight {
+  border-radius: 10px !important;
+}
+.MuiDataGrid-root .MuiDataGrid-columnHeaderWrapper {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.productListTable a {
+  display: flex;
+}
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: #ff0157;
+}
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  font-weight: bold !important;
+  color: white !important;
+}
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    /* font: 300 4vw "Roboto"; */
+  }
+  .productListContainer > p {
+    font-size: 2.5vmax;
+    margin: 2vmax;
+  }
+  .productListTable {
+    margin: 2vmax;
+    margin-top: 0;
+  }
+}
+@media (max-width: 460px) {
+  .productListContainer > p ,#productListHeading{
+    font-size: 2.5vmax;
+    margin: 2vmax;
+  }
+  .productListContainer>p>svg,#productListHeading>svg {
+    font-size: 3.2vmax;
+  }
+  .productListTable {
+    margin: 2vmax;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 2vmax;
+  margin: 2vmax;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 27%);
+}
+.sidebar > h1 {
+  margin-top: 2vmax;
+}
+.sidebar > h1 > .logo {
+  color: #ff0157;
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+.sidebar > a > .product {
+  background-color: #c2eeff;
+}
+.sidebar a {
+  text-decoration: none;
+  font: 200 1rem "Roboto";
+  padding: 2rem;
+  transition: all 0.5s;
+  font-weight: bold;
+  color: black;
+  padding-left: 0;
+}
+.sidebar a:hover {
+  color: #ff0157;
+  transform: scale(1.1);
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+  color: grey;
+}
+.MuiTypography-root {
+  background-color: #fff !important;
+}
+.MuiTreeItem-iconContainer svg {
+  color: gray;
+}
+.MuiTreeItem-label {
+  font-weight: bold !important;
+  font-family: "Poppins" !important;
+}
+.MuiTreeItem-root {
+  margin-top: 3vmax;
+}

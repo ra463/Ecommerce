@@ -1,0 +1,177 @@
+.newProductContainer {
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  background: rgb(241, 241, 241);
+  margin: 2vmax auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+.newProductContainer h1 {
+  text-align: center;
+  margin-top: -15px;
+  padding: 0.5vmax 1vmax;
+  border: 1px solid;
+  border-radius: 33px;
+  font-size: 21px;
+  margin-bottom: 1vmax;
+}
+
+.createProductForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vmax auto;
+  padding: 3vmax;
+  justify-content: space-evenly;
+  height: 90%;
+  width: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+}
+.createProductForm > div:first-child {
+  margin-top: 2vmax;
+}
+.createProductForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 0.7vmax;
+}
+.createProductForm > div > input,
+.createProductForm > div > select,
+.createProductForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  color: rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+}
+.createProductForm > div > input:focus,
+.createProductForm > div > select:focus,
+.createProductForm > div > textarea:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+.createProductForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#createProductFormFile > input {
+  display: flex;
+  padding: 0.5vmax 0;
+  border: none;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.24);
+  transition: all 0.4s;
+}
+
+#createProductFormFile > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  height: 6vh;
+  border: none;
+  margin: 0%;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: black;
+  background-color: rgb(236, 236, 236);
+  transition: all 0.4s;
+}
+#createProductFormFile > input::file-selector-button:hover {
+  background-color: rgb(226, 226, 226);
+}
+#createProductFormFile > input::file-selector-button:active {
+  transform: scale(0.88);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+#createProductFormImage {
+  width: 100%;
+  overflow: auto;
+}
+#createProductFormImage > img {
+  width: 3vmax;
+  margin: 0 0.5vmax;
+  border-radius: 10px;
+}
+#createProductBtn {
+  border: none;
+  background-color: #ff0157;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.219);
+}
+#createProductBtn:hover {
+  background-color: orange;
+}
+#createProductBtn:active {
+  transform: scale(0.88);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+@media screen and (max-width: 600px) {
+  .newProductContainer {
+    background-color: rgb(255, 255, 255);
+  }
+  .createProductForm > div > input,
+  .createProductForm > div > select,
+  .createProductForm > div > textarea {
+    padding: 1.6vmax 5vmax;
+  }
+
+  .createProductForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #createProductFormFile > img {
+    width: 8vmax;
+    margin: 0 0.5vmax;
+    border-radius: 20px;
+  }
+  #createProductFormFile > input::file-selector-button {
+    height: 5vh;
+  }
+  #createProductBtn {
+    padding: 1.8vmax;
+  }
+}
+@media (max-width: 480px) {
+  .createProductForm {
+    width: 36vmax;
+  }
+  .newProductContainer{
+    width: 90%;
+  }
+  .newProductContainer h1 {
+    margin-top: -10vmax;
+    margin-bottom: 0;
+  }
+  .createProductForm > div {
+    margin-top: -7.3vmax;
+  }
+  #createProductBtn{
+    margin-top: -60px;
+  }
+  .newProductContainer{
+    height: 100vh;
+  }
+}

@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.ProductDetails {
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 5vmax;
+}
+.ProductDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+.ProductDetails > div:first-child {
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* react-elastic-carousal */
+/* left and right arrow button */
+.jRFJkP {
+  display: none;
+}
+.cNNJIt {
+  display: none;
+}
+.ProductDetails > div:last-child {
+  align-items: flex-start;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ProductDetails img {
+  width: 400px;
+  height: 360px;
+}
+.detail-1 > h2 {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 4px 2vmax;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+.detail-1 > .tick {
+  color: violet;
+  border: 1px solid;
+  font-weight: bold;
+  display: flex;
+  border-left-width: thick;
+  width: fit-content;
+  padding-right: 1vmax;
+  margin-bottom: 10px;
+  padding-right: 2vmax;
+  padding: 5px;
+}
+.detail-1 > .tick > svg {
+  font-size: 1.3em;
+  margin-right: 5px;
+}
+.detail-1 > .id {
+  padding-top: 5px;
+  padding-left: 2px;
+  font-size: 13px;
+  color: #ff0157;
+}
+.detail-1 > .id > span {
+  color: black;
+  font-weight: bold;
+}
+.detail-2 {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 2px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vmax 0;
+}
+.MuiRating-sizeLarge {
+  /* font-size: 1.875rem; */
+  font-size: 21px;
+  margin-left: 5px;
+}
+.detail-2 > span {
+  display: flex;
+}
+.detail-2 > .star {
+  font-weight: 100;
+  margin-left: 2px;
+}
+.detail-3 {
+  padding-left: 2px;
+}
+.detail-3 > h1 {
+  color: orange;
+}
+.detail-3 > .detail-3-1 {
+  display: flex;
+  padding-top: 5px;
+  margin-left: -3px;
+}
+.detail-3 > .detail-3-1 > .detail-3-1-1 > button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #ff0157;
+  color: aliceblue;
+  border: 1px solid black;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.detail-3 > .detail-3-1 > .detail-3-1-1 > button:hover {
+  background: pink;
+}
+.detail-3 > .detail-3-1 > .detail-3-1-1 > input {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 13px;
+  padding-left: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.detail-3 > .detail-3-1 > button {
+  margin-left: 5px;
+  padding: 0 13px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background: white;
+  font-weight: bold;
+  transition: 0.4s all;
+}
+.detail-3 > .detail-3-1 > button:hover {
+  cursor: pointer;
+  background: rgb(241, 241, 241);
+}
+.detail-3 > .detail-3-1 > button:active {
+  transform: scale(0.8);
+  background: gray;
+}
+.detail-4 {
+  padding: 1vmax 2vmax;
+  border: 1.5px solid lightgreen;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgb(246, 255, 246);
+  box-shadow: 20px 12px 0px 0px rgb(0 0 0 / 20%);
+}
+.detail-4 > .color {
+  font-weight: bold;
+  padding-top: 5px;
+}
+.detail-4 > span {
+  font-weight: bold;
+}
+.MuiRating-sizeLarge {
+  font-size: 1.5rem;
+}
+.submitReview {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-left: 2px;
+  transition: 0.5s ease-in-out;
+  border-radius: 25px;
+  border: 1px solid rgb(255, 51, 0);
+  background: aliceblue;
+  font-weight: bold;
+}
+.submitReview:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+}
+
+.ratingsheading {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 4vmax;
+}
+.review {
+  display: flex;
+  overflow: auto;
+}
+.reviewcard {
+  flex: none;
+  border: 1px solid black;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  padding: 3vmax;
+  width: 35vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+}
+.reviewcard > p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.reviewcard > img {
+  width: 4.5vmax;
+  border-radius: 30px;
+  height: 55px;
+}
+.noReview {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 5vmax;
+}
+@media (max-width: 1000px) {
+  .detail-3 > .detail-3-1 {
+    flex-direction: column;
+  }
+  .detail-3 > .detail-3-1 > button {
+    padding: 5px;
+    margin-top: 5px;
+    width: 50%;
+  }
+  .reviewcard {
+    width: 40%;
+  }
+}
+@media (max-width: 850px) {
+  .ProductDetails {
+    flex-direction: column;
+  }
+  .ProductDetails > div {
+    width: 110%;
+    margin-left: -15px;
+  }
+  .ProductDetails > div:first-child {
+    border: 1px solid gray;
+    border-bottom: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .ProductDetails > div:last-child {
+    border: 1px solid gray;
+    border-top: none;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .reviewcard {
+    width: 42%;
+  }
+}
+@media (max-width: 470px) {
+  .ProductDetails {
+    font-size: 17px;
+  }
+  .ProductDetails > div:first-child {
+    padding: 5px;
+  }
+  .ProductDetails > div > .CarouselImage {
+    margin-top: 20px;
+  }
+  .ProductDetails img {
+    width: 280px;
+    height: 250px;
+  }
+  .detail-1 > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .detail-1 > p {
+    padding: 10px;
+    padding-left: 2px;
+  }
+  .detail-2 {
+    padding-bottom: 5px;
+  }
+  .detail-2 > span > span{
+    font-size: 3vmax;
+  }
+  .detail-2 > .star {
+    font-size: 15px;
+  }
+  .detail-3 > h1 {
+    font-size: 25px;
+  }
+  .detail-3 > .detail-3-1 {
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 2px;
+  }
+  .detail-3 > .detail-3-1 > button {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .detail-4 {
+    /* margin-top: 5px; */
+    width: 100%;
+  }
+  .submitReview {
+    margin-top: 10px;
+  }
+  .reviewcard {
+    width: 90%;
+  }
+  .reviewcard>img{
+    width: 7.5vmax;
+  }
+}
+@media (max-width: 420px) {
+  .detail-3 > .detail-3-1 > .detail-3-1-1 > input {
+    width: 70%;
+  }
+  .reviewcard {
+    width: 96%;
+  }
+}

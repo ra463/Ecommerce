@@ -1,0 +1,113 @@
+.productReviewsContainer {
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: rgb(241, 241, 241);
+  height: 65%;
+  margin: 2vmax auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.productReviewsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vmax auto;
+  padding: 3vmax;
+  justify-content: space-evenly;
+  height: 75%;
+  width: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+}
+
+.productReviewsFormHeading {
+  text-align: center;
+  margin-top: -15px;
+  padding: 0.5vmax 1vmax;
+  border: 1px solid;
+  border-radius: 33px;
+  font-size: 21px;
+  margin-bottom: 1vmax;
+}
+
+.productReviewsForm > div {
+  margin: 2vmax 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.productReviewsForm > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  color: rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+}
+.productReviewsForm > div > input:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+.productReviewsForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+#ProductBtn {
+  border: none;
+  background-color: #ff0157;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px rgb(0 0 0 / 22%);
+}
+.noReview-head {
+  text-align: center;
+  margin-top: 4vmax;
+}
+@media screen and (max-width: 600px) {
+  .productReviewsContainer {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.158);
+  }
+  .productReviewsForm > div > input {
+    padding: 2.5vmax 5vmax;
+  }
+  .productReviewsForm > div > svg {
+    font-size: 2.8vmax;
+  }
+  #ProductBtn {
+    padding: 1.8vmax;
+  }
+}
+@media (max-width: 480px) {
+  .productReviewsContainer {
+    width: 91%;
+    max-width: 100%;
+    height: auto;
+    margin: 2vmax;
+  }
+  .productReviewsForm {
+    width: 40vmax;
+    height: 37vmax;
+  }
+  .productReviewsFormHeading {
+    padding: 0.5vmax 2vmax;
+    margin-top: 0;
+  }
+}

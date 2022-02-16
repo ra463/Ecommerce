@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+footer {
+  width: 100%;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  font-size: 13px;
+  bottom: 0;
+  z-index: 99;
+}
+#footer {
+  display: flex;
+}
+footer .logo {
+  color: aliceblue;
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+footer .logo span {
+  color: #ff0157;
+}
+footer .left-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+footer .left-section > p > img{
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer
+}
+footer .mid-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.address {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.email {
+  width: fit-content;
+  border-bottom: 1px solid aliceblue;
+  margin: 20px 0;
+}
+footer .mid-section1 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 15%;
+}
+.links {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 25px;
+}
+footer .mid-section1 ul li {
+  list-style: none;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+}
+footer .mid-section1 ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+footer .mid-section1 ul li a:hover {
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+footer .right-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -80px;
+}
+footer .right-section .share {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 20px;
+}
+footer .right-section ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .right-section ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+footer .right-section ul li a {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+footer .right-section ul li a span {
+  font-size: 13px;
+  color: aliceblue;
+  margin-left: 5px;
+}
+.facebook {
+  color: aliceblue;
+  margin-bottom: -4px;
+}
+.instagram {
+  margin-bottom: -4px;
+  color: aliceblue;
+}
+.twitter {
+  color: aliceblue;
+  margin-bottom: -4px;
+}
+.pinterest {
+  color: aliceblue;
+  margin-bottom: -4px;
+}
+.hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid aliceblue;
+  margin: 10px auto;
+  opacity: 0.5;
+}
+.copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.copyright a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.underline {
+  width: 100%;
+  height: 4px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border-radius: 3px;
+  animation: move 2s linear infinite;
+}
+@keyframes move {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .left-section {
+    margin-left: 40px;
+  }
+  footer .mid-section {
+    margin-left: -50px;
+  }
+  footer .mid-section1 {
+    margin-left: 70px;
+  }
+  footer .right-section {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  footer .mid-section1 {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 805px) {
+  footer .left-section {
+    margin-left: 30px;
+  }
+  footer .logo {
+    font-size: 15px;
+  }
+  footer .mid-section {
+    margin-left: -75px;
+  }
+  footer .mid-section1 {
+    margin-left: 78px;
+  }
+  footer .right-section {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .logo{
+    font-size: 17px;
+  }
+  #footer {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  footer .right-section {
+    margin-right: 10px;
+  }
+  footer .right-section ul li a span {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 620px) {
+  footer .logo{
+    font-size: 12px;
+  }
+  footer .left-section{
+    width: 40%;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 35px;
+  }
+  footer .mid-section{
+    width: 40%;
+    margin-right: 11px;
+    margin-bottom: 26px;
+    margin-top: 15px;
+  }
+  footer .mid-section1{
+    width: 40%;
+    margin-left: 34px;
+  }
+  footer .right-section{
+    width: 40%;
+  }
+}

@@ -1,0 +1,125 @@
+.newProductProcess {
+  width: 95%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+  margin: 2vmax auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 27%);
+}
+.processOrderPage {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  border-radius: 10px;
+}
+.processOrderPage > div:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.247);
+  height: 130vh;
+  margin-top: 1vmax;
+  margin-left: -3vmax;
+}
+.processOrder {
+  padding: 5vmax 5vmax 0;
+}
+.processOrder > h3 {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+}
+.confirmCartItems > h3 {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+}
+.confirmCartItemsContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2vmax 0;
+  font-weight: bold;
+}
+.confirmCartItemsContainer > div > img {
+  width: 6vmax;
+  height: 8vmax;
+}
+.confirmCartItemsContainer > div > a {
+  margin: 0 2vmax;
+  width: 45%;
+  text-decoration: none;
+  color: black;
+}
+.confirmCartItemsContainer > div > span {
+  color: #5e5e5e;
+}
+.processOrder-2 {
+  border-left: 1px solid rgba(0, 0, 0, 0.247);
+  height: 130vh;
+  margin-top: 1vmax;
+}
+.updateOrderForm {
+  margin: 2vmax 0;
+  padding: 3vmax;
+  background-color: white;
+}
+.updateOrderForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.updateOrderForm > div > select {
+  padding: 1vmax 4vmax;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font-weight: bold;
+  outline: none;
+}
+
+.updateOrderForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+@media screen and (max-width: 600px) {
+  .updateOrderForm {
+    padding: 5vmax;
+  }
+
+  .updateOrderForm > div > select {
+    padding: 2.5vmax 5vmax;
+  }
+
+  .updateOrderForm > div > svg {
+    font-size: 2.8vmax;
+  }
+}
+@media screen and (max-width: 480px) {
+  .processOrderPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .confirmCartItems {
+    padding-bottom: 0;
+  }
+  .processOrderPage > div:last-child {
+    border-left: none;
+    margin-left: 0;
+    height: 32vh;
+  }
+  .updateOrderForm {
+    padding: 0 5vmax;
+  }
+  #createProductBtn {
+    margin-top: 0;
+  }
+}

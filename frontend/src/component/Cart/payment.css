@@ -1,0 +1,112 @@
+.paymentContainer {
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 65vh;
+  margin: 2vmax;
+}
+
+.paymentForm {
+  width: 30%;
+  height: 100%;
+  padding: 2vmax;
+  border: 2px solid;
+  border-radius: 10px;
+  background: rgb(243, 243, 243);
+}
+
+.paymentForm > p {
+  font-size: 2vmax;
+  border: 1px solid;
+  padding: 0vmax 1vmax;
+  width: fit-content;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.paymentForm > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.paymentInput {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  outline: none;
+  background: white;
+}
+.paymentInput:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+.paymentForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.paymentFormBtn {
+  border: none;
+  background-color: #ff0157;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.219);
+}
+
+.paymentFormBtn:hover {
+  background-color: orange;
+}
+.paymentFormBtn:active {
+  transform: scale(0.88);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+
+.paymentFormBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+@media screen and (max-width: 600px) {
+  .paymentForm {
+    width: 90%;
+  }
+
+  .paymentForm > p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vmax;
+    padding: 4vw 0;
+    width: 60%;
+  }
+
+  .paymentForm > div {
+    margin: 10vw 0;
+  }
+
+  .paymentInput {
+    padding: 4vw 10vw;
+  }
+
+  .paymentForm > div > svg {
+    font-size: 6vw;
+  }
+
+  .paymentFormBtn {
+    padding: 4vw;
+  }
+}

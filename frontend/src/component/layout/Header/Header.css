@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+nav {
+  padding: 0.5vmax 0vmax;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  justify-content: space-around;
+}
+nav .logo {
+  color: black;
+  font-weight: 900;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+nav .logo span {
+  color: #ff0157;
+}
+nav .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 13;
+}
+nav .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+nav .navigation li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+  position: relative;
+}
+nav .navigation li a:after {
+  content: " ";
+  position: absolute;
+  background-color: #ff0157;
+  height: 2px;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  transition: 0.3s all;
+}
+nav .navigation li a:hover:after {
+  width: 100%;
+}
+nav .navigation li a > svg {
+  color: rgb(40, 133, 170);
+  font-size: 1.3em;
+  margin-bottom: -4px;
+  margin-right: 5px;
+}
+nav .hamburger {
+  display: none;
+}
+.Search {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+.Search .Searchinput {
+  width: 60%;
+  padding: 5px;
+  margin: 10px;
+  font-family: cursive;
+  border: 1px solid black;
+}
+.Search .Searchinput:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+.Search .btn1 {
+  border-radius: 30px;
+  margin: 20px;
+  padding: 5px;
+  width: 30%;
+  letter-spacing: 3px;
+  color: white;
+  background: #ff0157;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  font-weight: bold;
+  border: none;
+}
+.Search .btn1:hover {
+  cursor: pointer;
+  background: lightskyblue;
+  transform: scale(1.1);
+}
+.Search .btn1:active {
+  transform: scale(0.88);
+}
+.speed-dial {
+  position: fixed;
+  top: 6.3vmax;
+  right: 3vmax;
+}
+.speeddial-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+@media (max-width: 1150px) {
+  nav {
+    justify-content: space-between;
+    padding: 0.5vmax 2vmax;
+  }
+  nav .navigation {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    background-color: aliceblue;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 10px;
+    right: -100%;
+    margin-top: 13.5vmax;
+    transition: 0.5s ease-in-out;
+    width: 30vmax;
+  }
+  nav .icons {
+    display: flex;
+    justify-content: center;
+  }
+  nav .hamburger {
+    display: block;
+    color: blueviolet;
+    font-size: 1.2em;
+  }
+  nav .hamburger:hover {
+    color: #ff0157;
+  }
+  nav .navigation-mobile {
+    right: 0;
+    position: absolute;
+  }
+}
+@media (max-width: 800px) {
+  .Search .Searchinput {
+    width: 60%;
+  }
+  .Search .btn1 {
+    width: 27%;
+  }
+}
+@media (max-width: 600px) {
+  .Search .Searchinput {
+    width: 50%;
+  }
+  .Search .btn1 {
+    width: 25%;
+  }
+}
+@media (max-width: 450px) {
+  nav {
+    height: 15vmax;
+  }
+  nav .logo {
+    margin-top: -40px;
+  }
+  nav .hamburger {
+    margin-top: -20px;
+  }
+  .Search {
+    font-size: 15px;
+    width: 94%;
+  }
+  .Search .Searchinput {
+    width: 70%;
+  }
+  .Search .btn1 {
+    width: 30%;
+    font-size: 13px;
+  }
+  .search-div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 8vmax;
+    margin-left: 10px;
+    width: 100%;
+    margin-left: -18px;
+  }
+}

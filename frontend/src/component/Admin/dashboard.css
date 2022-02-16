@@ -1,0 +1,245 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: gainsboro;
+}
+
+.dashboardContainer {
+  padding: 2vmax;
+  margin: 2vmax;
+  border-radius: 10px;
+  padding-left: 0;
+  padding-top: 0;
+}
+.dash-head {
+  height: 4vmax;
+  font-size: 1.7vmax;
+  font-weight: bold;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+}
+.dash-head > p {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+}
+.dash-head > p > svg {
+  margin-right: 8px;
+  color: gray;
+}
+.dashboardSummaryBox2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vmax;
+  margin-left: 0;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  background: white;
+  width: 100%;
+  max-width: 100%;
+}
+.dashboardSummaryBox2 > a {
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 19vmax;
+  height: 19vmax;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 255, 246);
+  box-shadow: 20px 12px 0px 0px rgb(0 0 0 / 20%);
+}
+.dashboardSummaryBox2 > a:first-child {
+  border: 2px solid lightgreen;
+  border-radius: 15px;
+}
+.dashboardSummaryBox2 > a:first-child > p:first-child {
+  margin: 0.5vmax 0;
+  padding: 0 0.7vmax;
+  border: 1px solid;
+  border-radius: 30px;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: #ff0157;
+}
+.dashboardSummaryBox2 > .order {
+  border: 2px solid deepskyblue;
+  background: #eaf2f6;
+  border-radius: 15px;
+}
+.dashboardSummaryBox2 > .order > p:first-child {
+  margin: 0.5vmax 0;
+  padding: 0 0.7vmax;
+  border: 1px solid;
+  border-radius: 30px;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: darkorchid;
+}
+.dashboardSummaryBox2 > a:last-child {
+  border: 2px solid burlywood;
+
+  color: brown;
+  background: #eae3db;
+  border-radius: 15px;
+}
+.dashboardSummaryBox2 > a:last-child > p:first-child {
+  margin: 0.5vmax 0;
+  padding: 0 0.7vmax;
+  border: 1px solid;
+  border-radius: 30px;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: brown;
+}
+.dashboardSummaryBox2 > a > .para {
+  margin-top: 15px;
+  color: gray;
+}
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+}
+.chart > div:first-child {
+  width: 38vmax;
+  background: white;
+  padding: 2vmax;
+  border-radius: 10px;
+}
+.chart > div:last-child {
+  width: 30vmax;
+  background: white;
+  padding: 2vmax;
+  border-radius: 10px;
+  margin-top: 2vmax;
+  margin-bottom: -2vmax;
+}
+.chart > .link {
+  border-radius: 10px;
+  background: white;
+  margin-left: 2rem;
+  width: 28vmax;
+  height: 25vmax;
+}
+.chart > .link > a {
+  border-radius: 15px;
+  border: 2px solid violet;
+  box-shadow: 20px 12px 0px 0px rgb(0 0 0 / 20%);
+  display: flex;
+  flex-direction: column;
+  padding: 2vmax;
+  margin: 2vmax;
+  text-decoration: none;
+}
+.chart > .link > a > p:first-child {
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: deepskyblue;
+  padding: 0 1.7vmax;
+  border: 1px solid;
+  border-radius: 30px;
+  margin: 0.5vmax 0;
+}
+.chart > .link > a > .para {
+  margin-top: 15px;
+  color: gray;
+}
+.chart > div:first-child > p:first-child {
+  font-weight: bold;
+  color: hotpink;
+  font-size: 1.5vmax;
+  margin-bottom: 1vmax;
+  width: fit-content;
+  padding: 0.5vmax 1vmax;
+  border: 1px solid;
+  border-radius: 30px;
+}
+.chart > div:last-child > p:first-child {
+  font-weight: bold;
+  color: orange;
+  font-size: 1.5vmax;
+  margin-bottom: 1vmax;
+  width: fit-content;
+  padding: 0.5vmax 1vmax;
+  border: 1px solid;
+  border-radius: 30px;
+}
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .dash-head {
+    height: 6vmax;
+    font-size: 2.7vmax;
+  }
+  .dashboardSummaryBox2 {
+    padding: 2vmax;
+  }
+  .dashboardSummaryBox2 > a {
+    width: auto;
+    height: auto;
+    padding: 2vmax;
+  }
+  .dashboardSummaryBox2 > a:first-child > p:first-child {
+    font-size: 2.5vmax;
+  }
+  .dashboardSummaryBox2 > a > p:first-child {
+    font-size: 2.5vmax;
+    width: fit-content;
+    padding: 0 1vmax;
+  }
+  .dashboardSummaryBox2 > .order > p:first-child {
+    font-size: 2.5vmax;
+    width: fit-content;
+    padding: 0 1vmax;
+  }
+  .dashboardSummaryBox2>a:last-child>p:first-child{
+    font-size: 2.5vmax;
+  }
+  .chart > div:first-child > p:first-child {
+    font-size: 2.5vmax;
+  }
+  .chart > div:first-child {
+    width: 100%;
+    margin: 2vmax 0;
+    margin-top: 1vmax;
+  }
+  .chart > .link {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    padding: 4vmax;
+  }
+  .chart > .link > a {
+    width: auto;
+    margin: auto;
+  }
+  .chart > .link > a > p:first-child {
+    font-size: 2.5vmax;
+  }
+  .chart > div:last-child {
+    width: auto;
+  }
+
+  .chart > div:last-child > p:first-child {
+    font-size: 2.5vmax;
+  }
+}

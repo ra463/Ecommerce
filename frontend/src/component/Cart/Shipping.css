@@ -1,0 +1,125 @@
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shippingBox {
+  background-color: rgb(241, 241, 241);
+  width: 50vw;
+  height: 95vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  margin: 2vmax auto;
+}
+
+.shippingHeading {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 0.3vmax 1vmax;
+  background: white;
+  margin-bottom: 1vmax;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3vmax;
+  justify-content: space-evenly;
+  height: 95%;
+  transition: all 0.5s;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+}
+.shippingForm > div:first-child {
+  margin-top: 2vmax;
+}
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 0.7vmax;
+}
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  outline: none;
+  font-weight: bold;
+}
+.shippingForm > div > input:focus,
+.shippingForm > div > select:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+.shippingBtn {
+  border: none;
+  background-color: #ff0157;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.219);
+}
+.shippingBtn:hover {
+  background-color: orange;
+}
+.shippingBtn:active {
+  transform: scale(0.88);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 91vw;
+    height: 95vh;
+  }
+  .shippingHeading {
+    padding: 0 2vmax;
+  }
+  .shippingForm {
+    padding: 5vw;
+    width: 90%;
+    margin: 3vmax auto;
+  }
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 5vw 10vw;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    padding: 4vw;
+  }
+}
